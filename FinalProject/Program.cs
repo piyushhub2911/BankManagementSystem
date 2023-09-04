@@ -19,8 +19,9 @@ builder.Services.AddScoped<IAccountRepo, AccountRepo>();
 builder.Services.AddScoped<ITransactionRepo, TransactionRepo>();
 builder.Services.AddDbContext<BankContext>(options =>
 
-    options.UseSqlServer("Data Source = 192.168.2.185\\beta; Initial Catalog = SmallOffice; Integrated Security = True; Encrypt = False")
-);
+
+    options.UseSqlServer("Data Source = DESKTOP-K7MEGRI; Initial Catalog = BankManagementSystem; Integrated Security = True; Encrypt = False")
+) ;
 //builder.Services.AddCors(options =>
 //{
 //    options.AddDefaultPolicy(

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinalProject.Migrations
 {
     [DbContext(typeof(BankContext))]
-    [Migration("20230731184022_ReSeedPrimaryJey")]
-    partial class ReSeedPrimaryJey
+    [Migration("20230903194306_Migration1")]
+    partial class Migration1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

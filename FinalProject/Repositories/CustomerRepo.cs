@@ -43,7 +43,7 @@ namespace FinalProject.Repositories
             AccountModel acc = m.Map<AccountCustomerModel, AccountModel>(customer);
             acc.CustomerId=obj.CustomerId;
             _accountRepo.AddAccount(acc);
-            //not directly calling aaddAccount in if to check code because it is called twice and hence in second call not able to find cu
+            //not directly calling add Account in if to check code because it is called twice and hence in second call not able to find cu
             //customer ID and showing error customer id not found
             
             _bankContext.SaveChanges();
